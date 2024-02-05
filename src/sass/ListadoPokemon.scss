@@ -1,0 +1,87 @@
+@use 'variables' as c;
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 340px;
+    border-radius: 16px;
+    background-color: c.$color2;
+    box-shadow: 3px 3px 10px;
+    padding: 18px 12px 12px 12px;
+    color: c.$color1;
+    font-size: 32px;
+    cursor:pointer;
+    position: relative;
+    margin-bottom: 30px;
+    border: 5px solid c.$color4;
+    object-fit: cover;
+    transform: rotate(0deg) translateY(10px);
+    &:hover{
+        transform: rotate(0deg) translateY(0px);
+    }
+    &__name{
+        background-color: c.$color1;
+        text-align: center;
+        color:c.$color6;
+        width: 160px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px 12px ;
+    }
+    &__table{      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    &__img{
+        margin-top: 60px;
+        position: absolute;
+        z-index: 1;
+        width: 60%;
+        object-fit: cover;
+    }
+}
+.btn1{
+    background-color: c.$color1;
+    height: 70px;
+    width: 900px;
+    color:c.$color6;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 20px;
+    border: 3px solid black;
+}
+.title{
+    color: c.$color7;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button{
+    background-color: c.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color:c.$color6;
+    cursor: pointer;
+    font-size: 32px;
+    &__box{
+        position: relative;
+    }
+    &__shadow{
+        width: 60px;
+        height: 60px;
+        background-color: c.$color2;
+        border-radius: 50%;
+        position: absolute;
+        top:5px;
+        z-index: -1;
+
+    }
+    &:active{
+        transform: translateY(4px);
+    }
+}

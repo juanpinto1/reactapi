@@ -7,6 +7,7 @@ import {TiArrowRightOutline } from "react-icons/ti";
 import PokemonList from './components/MiApi';
 import './sass/ListadoPokemon.scss'
 import MiApi from './components/Statesearch';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
       
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

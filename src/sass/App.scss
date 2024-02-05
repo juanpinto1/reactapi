@@ -7,9 +7,10 @@
 
 }
 .buttons-container{
-    width: 700px;
+    width: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: auto;
 }
 .card-container{
     display: flex;

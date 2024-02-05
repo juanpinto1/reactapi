@@ -5,6 +5,7 @@ const Search = ({ pokemonList, setSortedList }) => {
 const [selectarpokemon, SetSelectarpokemon] = useState('');
 const [originalList, setOriginalList] = useState(pokemonList);
 
+
 useEffect(() => {
     setOriginalList(pokemonList);
 }, [pokemonList]);

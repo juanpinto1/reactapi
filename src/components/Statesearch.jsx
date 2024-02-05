@@ -3,7 +3,6 @@ import '../sass/ListadoPokemon.scss';
 
 const MiApi = () => {
   const [pokemonResults, setPokemonResults] = useState([]);
-  const [chosenPokemon, setChosenPokemon] = useState('');
   
 
   const handlePokemonSearch = () => {

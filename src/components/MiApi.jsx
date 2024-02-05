@@ -9,6 +9,7 @@ const [prevPage, setPrevPage] = useState(null);
 const [offset, setOffset] = useState(0);
 const [sortedList, setSortedList] = useState([]);
 
+
 useEffect(() => {
     const fetchPokemonList = async () => {
     try {
@@ -70,7 +71,7 @@ return (
     <Search pokemonList={pokemonList} setSortedList={setSortedList} />
     <div className='list'>
         <div className='list2'>
-        <h1 className='title'>Lista de Pokemon</h1>
+        <h1 className='title'>Pokemones Encontrados</h1>
         <ul className='pokemon__table'>
             {sortedList.map((pokemon, index) => {
             const pokemonId = pokemon.url.split('/').slice(-2, -1)[0];
